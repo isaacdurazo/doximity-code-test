@@ -47,7 +47,7 @@ button {
 
 /* Left Sidebar */
 .left-sidebar {
-  height: 200px;
+  height: fit-content;
 }
 
 .left-sidebar button {
@@ -95,7 +95,7 @@ button {
 
 /* Right Sidebar */
 .right-sidebar {
-  height: 259px;
+  height: fit-content;
 }
 
 .right-sidebar p {
