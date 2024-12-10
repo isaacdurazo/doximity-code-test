@@ -30,6 +30,7 @@ main {
 h2 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1;
 }
 
 button {
@@ -156,6 +157,10 @@ button.dropbtn .arrow-down {
 /* Right Sidebar */
 .right-sidebar {
   height: fit-content;
+}
+
+.right-sidebar h2 {
+  margin-bottom: 10px;
 }
 
 .right-sidebar p {
