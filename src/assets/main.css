@@ -19,6 +19,10 @@ h2 {
   font-weight: 700;
 }
 
+button {
+  cursor: pointer;
+}
+
 .left-sidebar,
 .cards .single-card,
 .right-sidebar {
@@ -35,16 +39,13 @@ h2 {
   flex-grow: 0;
 }
 
-.cards {
-  flex-basis: 550px;
-}
-
 .left-sidebar h2,
 .left-sidebar p,
 .left-sidebar button {
   margin-bottom: 15px;
 }
 
+/* Left Sidebar */
 .left-sidebar {
   height: 200px;
 }
@@ -57,6 +58,10 @@ h2 {
   font-size: 16px;
   font-weight: 700;
   padding: 10.5px 19px;
+}
+
+.left-sidebar button:hover {
+  background-color: #0e6bbc;
 }
 
 .left-sidebar select {
@@ -73,6 +78,11 @@ h2 {
   background-color: white;
 }
 
+/* Cards */
+.cards {
+  flex-basis: 550px;
+}
+
 .cards .single-card {
   margin-bottom: 10px;
   height: 300px;
@@ -83,6 +93,56 @@ h2 {
   font-weight: 700;
 }
 
+/* Right Sidebar */
 .right-sidebar {
   height: 259px;
+}
+
+.right-sidebar p {
+  margin-bottom: 10px;
+}
+
+.right-sidebar .user {
+  display: flex;
+  padding: 10px 0;
+}
+
+.right-sidebar .name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  margin-top: 2px;
+}
+
+.right-sidebar .location {
+  font-size: 14px;
+  font-weight: 400;
+  color: #585858;
+  line-height: 16.94px;
+}
+
+.right-sidebar .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.right-sidebar .user-details {
+  flex-grow: 3;
+}
+
+.right-sidebar button.plus-icon {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.right-sidebar button.plus-icon:hover img {
+  background-color: rgb(229, 229, 229);
+  border-radius: 40px;
+}
+
+.right-sidebar .plus-icon img {
+  width: 22px;
 }

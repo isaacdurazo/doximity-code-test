@@ -1,16 +1,36 @@
 <template>
   <div class="right-sidebar">
-    <div>
-      <h2>This is a List</h2>
-      <p>This is some regular text</p>
-    </div>
+    <h2>This is a List</h2>
+    <p>This is some regular text</p>
     <div class="user">
-      <div class="avatar">avatar-icon</div>
+      <img class="avatar" src="@/components/icons/iconAvatar.svg">      
       <div class="user-details">
         <div class="name">John Stevens</div>
         <div class="location">San Francisco, CA</div>
       </div>
-      <button class="plus">+</button>
+      <button type="button" class="plus-icon">
+        <img src="@/components/icons/iconPlus.svg">
+      </button>
+    </div>
+    <div class="user">
+      <img class="avatar" src="@/components/icons/iconAvatar.svg">      
+      <div class="user-details">
+        <div class="name">John Stevens</div>
+        <div class="location">San Francisco, CA</div>
+      </div>
+      <button type="button" class="plus-icon">
+        <img src="@/components/icons/iconPlus.svg">
+      </button>
+    </div>
+    <div class="user">
+      <img class="avatar" src="@/components/icons/iconAvatar.svg">      
+      <div class="user-details">
+        <div class="name">John Stevens</div>
+        <div class="location">San Francisco, CA</div>
+      </div>
+      <button type="button" class="plus-icon">
+        <img src="@/components/icons/iconPlus.svg">
+      </button>
     </div>
   </div>
 </template>

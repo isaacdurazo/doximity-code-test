@@ -2,7 +2,7 @@
   <div class="left-sidebar">
     <h2>Hello World</h2>
     <p>This is some regular text</p>
-    <button class="cta">Let's Go</button>
+    <button type="button">Let's Go</button>
     <div class="custom-select">  
       <select>
         <option value="0">Option 1</option>
@@ -11,5 +11,4 @@
       </select>
     </div>
   </div>
-
 </template>
