@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import CodeTest from '../components/CodeTest.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <CodeTest />
   </main>
 </template>
