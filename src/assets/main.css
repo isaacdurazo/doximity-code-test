@@ -64,19 +64,68 @@ button {
   background-color: #0e6bbc;
 }
 
-.left-sidebar select {
-  display: block;
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+button.dropbtn {
+  display: flex;
+  background-color: white;
+  color: black;
+  cursor: pointer;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
   border-radius: 10px;
-  border-color: #BBBBBB;
+  border: 1px solid #BBBBBB;
   padding: 10px 15px;
+  margin-bottom: 2px;
 }
 
-.left-sidebar select option {
+button.dropbtn:hover {
   background-color: white;
 }
+
+button.dropbtn .label {
+  flex-grow: 1;
+  text-align: left;
+}
+
+button.dropbtn .arrow-down {
+  width: 15px;
+  margin-top: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.18);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* Cards */
 .cards {
