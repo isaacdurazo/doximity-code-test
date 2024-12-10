@@ -1,6 +1,10 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+#app {
+  padding: 0 30px;
+}
+
 body {
   background-color: #F5F5F5;
   font-family: "Inter", sans-serif;
@@ -12,6 +16,15 @@ main {
   margin: 40px auto;
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 850px) { 
+  main {
+    display: block;
+  }
+  main > div {
+    margin-bottom: 20px;
+  }
 }
 
 h2 {
@@ -36,7 +49,6 @@ button {
 .left-sidebar,
 .right-sidebar {
   flex-basis: 300px;
-  flex-grow: 0;
 }
 
 .left-sidebar h2,
@@ -125,7 +137,6 @@ button.dropbtn .arrow-down {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 /* Cards */
 .cards {
