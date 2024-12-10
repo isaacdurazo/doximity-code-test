@@ -4,18 +4,23 @@
 body {
   background-color: #F5F5F5;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
 main {
   max-width: 1200px;
   margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  display: flex;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .left-sidebar,
-.cards,
+.cards .single-card,
 .right-sidebar {
   background-color: white;
   color: black;
@@ -24,14 +29,60 @@ main {
   padding: 10px;
 }
 
-.left-sidebar {
-
+.left-sidebar,
+.right-sidebar {
+  flex-basis: 300px;
+  flex-grow: 0;
 }
 
 .cards {
+  flex-basis: 550px;
+}
 
+.left-sidebar h2,
+.left-sidebar p,
+.left-sidebar button {
+  margin-bottom: 15px;
+}
+
+.left-sidebar {
+  height: 200px;
+}
+
+.left-sidebar button {
+  background-color: #0F76D3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10.5px 19px;
+}
+
+.left-sidebar select {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  border-color: #BBBBBB;
+  padding: 10px 15px;
+}
+
+.left-sidebar select option {
+  background-color: white;
+}
+
+.cards .single-card {
+  margin-bottom: 10px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 280px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .right-sidebar {
-
+  height: 259px;
 }
